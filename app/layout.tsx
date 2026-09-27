@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "clutch lining Cebu",
     "underchassis repair Lawaan",
   ],
+  verification: {
+    google: "JDLqRJo0b7rx07pXThjgvCdYPkmD6tRLegp0B_ccv_Y",
+  },
   openGraph: {
     title: "Star Brake Bonding Services | Brake & Automotive Repair in Cebu",
     description:
