@@ -291,6 +291,15 @@ export default function Home() {
               <a className="button button-red" href={`sms:${phoneNumbers[0].tel}`}>
                 Send a message <ArrowUpRight size={17} aria-hidden="true" />
               </a>
+              <a
+                className="button button-ghost facebook-button"
+                href={business.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="facebook-icon" aria-hidden="true">f</span>
+                Facebook Page <ArrowUpRight size={17} aria-hidden="true" />
+              </a>
             </div>
             <div className="contact-numbers">
               {phoneNumbers.map((phone) => (
@@ -334,6 +343,15 @@ export default function Home() {
             <p>Lawaan I, Talisay City, Cebu</p>
             <a className="footer-directions" href={business.directionsUrl} target="_blank" rel="noreferrer">
               Get Directions <ArrowUpRight size={15} aria-hidden="true" />
+            </a>
+            <a
+              className="footer-directions footer-facebook"
+              href={business.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="facebook-icon" aria-hidden="true">f</span>
+              Facebook Page <ArrowUpRight size={15} aria-hidden="true" />
             </a>
           </div>
           <div className="footer-column">

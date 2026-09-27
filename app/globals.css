@@ -159,6 +159,9 @@ button { font: inherit; }
 .contact-copy h2 { max-width: 490px; font-size: clamp(46px, 5.4vw, 66px); }
 .contact-copy > p:not(.eyebrow) { max-width: 370px; margin: 16px 0 24px; color: #c1c6c4; font-size: 13px; line-height: 1.8; }
 .contact-copy .button { min-height: 45px; }
+.facebook-button { margin-left: 8px; }
+.facebook-icon { width: 18px; height: 18px; display: inline-grid; flex: 0 0 auto; place-items: center; border: 1px solid currentColor; border-radius: 50%; font-family: var(--font-barlow-condensed), sans-serif; font-size: 13px; font-weight: 800; line-height: 1; }
+.footer-facebook { margin-top: 2px; }
 .contact-numbers { border-top: 1px solid rgba(255, 255, 255, .17); }
 .contact-number-row { min-height: 79px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid rgba(255, 255, 255, .17); }
 .contact-number-row > div { display: flex; flex-direction: column; gap: 5px; }
