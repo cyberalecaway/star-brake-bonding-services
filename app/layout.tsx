@@ -14,9 +14,9 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Star Brake Bonding Services | Brake & Automotive Repair in Cebu",
+  title: "Star Brake Bonding Services | Auto Repair in Talisay City, Cebu",
   description:
-    "Brake bonding, clutch lining, underchassis, transmission, and automotive repair in Lawaan I, Talisay City, Cebu. Open daily, 8:00 AM to 5:00 PM.",
+    "Brake bonding, clutch lining, underchassis, transmission, engine and A/C repair in Lawaan I, Talisay City, Cebu. Open daily from 8:00 AM to 5:00 PM.",
   keywords: [
     "brake bonding Cebu",
     "automotive repair Talisay City",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     google: "JDLqRJo0b7rx07pXThjgvCdYPkmD6tRLegp0B_ccv_Y",
   },
   openGraph: {
-    title: "Star Brake Bonding Services | Brake & Automotive Repair in Cebu",
+    title: "Star Brake Bonding Services | Auto Repair in Talisay City, Cebu",
     description:
-      "Brake, clutch, underchassis, transmission, and automotive repair in Lawaan I, Talisay City, Cebu.",
+      "Brake bonding, clutch lining, underchassis, transmission, engine and A/C repair in Lawaan I, Talisay City, Cebu.",
     type: "website",
     locale: "en_PH",
   },

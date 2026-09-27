@@ -9,6 +9,7 @@ import {
 
 export const business = {
   name: "Star Brake Bonding Services",
+  websiteUrl: "https://star-brake-bonding-services.vercel.app",
   directionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=10.258766%2C123.825070",
   mapsUrl:
@@ -57,6 +58,9 @@ export const serviceGroups: {
       "Underchassis Removal",
       "Underchassis Installation",
       "Underchassis Repair",
+      "Rack and Pinion Repair",
+      "Tie Rod End / Rod End Repair",
+      "Ball Joint Repair",
     ],
   },
   {

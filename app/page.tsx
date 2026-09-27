@@ -18,8 +18,17 @@ import {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "AutomotiveBusiness",
+  "@type": "AutoRepair",
+  "@id": `${business.websiteUrl}/#localbusiness`,
   name: business.name,
+  description:
+    "Brake, clutch, underchassis, transmission, engine, and air-conditioning repair services in Lawaan I, Talisay City, Cebu. Open Monday to Sunday, 8:00 AM to 5:00 PM.",
+  url: business.websiteUrl,
+  image: [
+    `${business.websiteUrl}/starbrake.png`,
+    ...galleryImages.map((image) => new URL(image.src, business.websiteUrl).href),
+  ],
+  logo: `${business.websiteUrl}/starbrake.png`,
   address: {
     "@type": "PostalAddress",
     streetAddress: "Lawaan I",
@@ -38,7 +47,28 @@ const localBusinessSchema = {
     telephone: phone.tel,
     contactType: `${phone.label} phone`,
   })),
-  openingHours: "Mo-Su 08:00-17:00",
+  hasMap: business.mapsUrl,
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: openingHours.map((day) => `https://schema.org/${day.day}`),
+      opens: "08:00:00",
+      closes: "17:00:00",
+    },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Automotive repair services",
+    itemListElement: serviceGroups.flatMap((group) =>
+      group.services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service,
+        },
+      })),
+    ),
+  },
 };
 
 export default function Home() {
@@ -325,7 +355,12 @@ export default function Home() {
         </div>
       </footer>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema).replace(/</g, "\\u003c"),
+        }}
+      />
     </>
   );
 }
